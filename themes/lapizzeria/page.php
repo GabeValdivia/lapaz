@@ -1,4 +1,4 @@
 <?php
-    echo "<h1>Hello from page.php!</h1>"
+    echo "<h1>Hello from page.php!!</h1>"
 
 ?>
