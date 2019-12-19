@@ -16,11 +16,39 @@
         </div>
     <!-- Info Box Area -->
     <div class="box-information container clear">
-        <div class="box">
+
+        <div class="single-box">
+            <?php 
+                $id_image = get_field('image_1');
+                $image = wp_get_attachment_image_src($id_image, 'boxes');
+            ?>
+            <img src="<?php echo $image[0]; ?>" />
             <div class="content-box">
                 <?php the_field('description_1') ?>
             </div>
-        </div>
+        </div><!-- Single Box 1 -->
+
+        <div class="single-box">
+            <?php 
+                $id_image = get_field('image_2');
+                $image = wp_get_attachment_image_src($id_image, 'boxes');
+            ?>
+            <img src="<?php echo $image[0]; ?>" />
+            <div class="content-box">
+                <?php the_field('description_2') ?>
+            </div>
+        </div><!-- Single Box 2 -->
+
+        <div class="single-box">
+            <?php 
+                $id_image = get_field('image_3');
+                $image = wp_get_attachment_image_src($id_image, 'boxes');
+            ?>
+            <img src="<?php echo $image[0]; ?>" />
+            <div class="content-box">
+                <?php the_field('description_3') ?>
+            </div>
+        </div><!-- Single Box 3 -->
     </div>
         
 
