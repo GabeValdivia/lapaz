@@ -38,7 +38,7 @@
                         );
                         $pizzas = new WP_Query($args);
                         while($pizzas->have_posts()): $pizzas->the_post(); ?>
-                        <div class="columns2-4">
+                        <div class="columns2-4 specialty-content">
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('specialties'); ?>
                                 <h4><?php the_title(); ?> <span>$<?php the_field('price'); ?></span></h4>
@@ -62,7 +62,7 @@
                         );
                         $pizzas = new WP_Query($args);
                         while($pizzas->have_posts()): $pizzas->the_post(); ?>
-                        <div class="columns2-4">
+                        <div class="columns2-4 specialty-content">
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('specialties'); ?>
                                 <h4><?php the_title(); ?> <span>$<?php the_field('price'); ?></span></h4>
