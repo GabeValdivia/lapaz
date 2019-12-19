@@ -133,7 +133,7 @@ nav.socials ul {
     padding: 0;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     nav.socials ul {
         float: right;
     }
@@ -180,7 +180,7 @@ nav.site-nav {
     display: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     nav.site-nav {
         display: block;
     }
@@ -194,7 +194,7 @@ nav.site-nav ul {
     display: table;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     nav.site-nav ul li {
         display: table-cell;
         width: 1%;
@@ -219,7 +219,7 @@ nav.site-nav ul li.current_page_item a{
 }
 
 /** Responsive Menu **/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
@@ -271,7 +271,7 @@ nav.site-nav ul li.current_page_item a{
     position: relative;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .hero-text {
         width: 80%;
         margin: 0 auto;
@@ -291,7 +291,7 @@ nav.site-nav ul li.current_page_item a{
     position: relative; 
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .main-content {
         margin-top: -90px;
     }
@@ -300,4 +300,27 @@ nav.site-nav ul li.current_page_item a{
 .content-text p {
     font-size: 18px;
     line-height: 50px;
+}
+
+/** Info Boxes **/
+.box-information {
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .box-information {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.single-box {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+@media screen and (min-width: 768px) {
+    .single-box {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+    }
 }
