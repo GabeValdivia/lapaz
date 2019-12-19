@@ -14,7 +14,16 @@
         <a href="<?php echo esc_url( home_url('/') ); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" class="logo-image" />
         </a>
-    </div>
+    </div><!-- Logo -->
+    <div class="header-information">
+        <div class="socials">
+
+        </div><!-- Socials -->
+        <div class="address">
+            <p>8179 Bay Avenue Mountain View, CA 94043</p>
+            <p>Phone Number: +1-92-456-7890</p>
+        </div>
+    </div><!-- Header Information -->
 </header>
 <div class="main-menu">
     <div class="navigation">
