@@ -1,5 +1,11 @@
 <?php
 
+// Add Theme Support ( thumbnails, featured images)
+function lapizzeria_setup() {
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'lapizzeria_setup');
+
 function lapizzera_styles() {
     // Adding stylesheests
     wp_register_style('googlefont', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900&display=swap', array(), '1.0.0');
