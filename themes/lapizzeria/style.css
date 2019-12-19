@@ -11,3 +11,7 @@
     Text Domain: La Pizzeria
 
 */
+
+.sr-text {
+    display: none;
+}
