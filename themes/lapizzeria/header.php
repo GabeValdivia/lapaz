@@ -38,6 +38,9 @@
     </div>
 </header>
 <div class="main-menu">
+    <div class="mobile-menu">
+        <a href="#" class="mobile"><i class="fa fa-bars"></i>Menu</a>
+    </div>
     <div class="navigation container">
         <?php 
             $args = array(
