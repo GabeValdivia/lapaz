@@ -3,7 +3,7 @@
 function lapizzera_styles() {
     // Adding stylesheests
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize', array(), '8.0.1');
-    wp_register_style('fontawesome', get_template_directory_uri() . '/css/fontawesome.min.css', array(), '5.12.0');
+    wp_register_style('fontawesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0');
     wp_register_style('style', get_template_directory_uri() . '/style.css', array('normalize'), '1.0');
     
     
