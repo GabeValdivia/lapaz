@@ -1,10 +1,24 @@
 <?php get_header(); ?>
 
     <?php while(have_posts()): the_post(); ?>
-        <?php the_post_thumbnail(); ?>
+        <div class="hero">
+            <div class="hero-content">
+                <hero-text>
+                <?php the_post_thumbnail(); ?>
+                <h2><?php the_title(); ?></h2>
+                </hero-text>
+            </div>
+        </div>
 
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
+        <div class="main-content container">
+            <main class="text-center content-text">
+                <?php the_content(); ?>
+            </main>
+        </div>
+        
+
+        
+        
 
         <?php endwhile; ?>
 
