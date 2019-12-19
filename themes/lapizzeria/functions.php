@@ -12,3 +12,4 @@ function lapizzera_styles() {
 }
 add_action('wp_enqueue_scripts', 'lapizzera_styles');
 
+// Make sure to add 'wp_head();' to header.php 
