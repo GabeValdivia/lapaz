@@ -18,7 +18,7 @@
     <div class="box-information container clear">
         <div class="box">
             <div class="content-box">
-
+                <?php the_field('description_1') ?>
             </div>
         </div>
     </div>
