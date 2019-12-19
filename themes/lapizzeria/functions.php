@@ -12,4 +12,12 @@ function lapizzera_styles() {
 }
 add_action('wp_enqueue_scripts', 'lapizzera_styles');
 
-// Make sure to add 'wp_head();' to header.php 
+// Add Menus
+
+function lapizzera_menus(){
+    register_nav_menus(array(
+        'header-menu' => __('Header Menu', 'lapizzeria')
+    ));
+}
+add_action('init', 'lapizzera_menus');
+
