@@ -5,7 +5,7 @@
             $args = array(
                 'theme_location' => 'header-menu',
                 'container' => 'nav',
-                'after' => '<span class="separator> | </span>"'
+                'after' => '<span class="separator"> | </span>'
             );
             wp_nav_menu($args);
         ?>
