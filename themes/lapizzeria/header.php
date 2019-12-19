@@ -16,3 +16,18 @@
         </a>
     </div>
 </header>
+<div class="main-menu">
+    <div class="navigation">
+        <?php 
+            $args = array(
+                'theme_location' => 'header-menu',
+                'container'      => 'nav',
+                'container_class' => 'site-nav'
+            );
+            wp_nav_menu($args);
+        ?>
+        <nav class="site-nav">
+
+        </nav>
+    </div>
+</div>
