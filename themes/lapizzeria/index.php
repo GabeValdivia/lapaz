@@ -31,7 +31,7 @@
                                         <?php echo the_time('d'); ?>
                                         <span><?php echo the_time('M'); ?></span>
                                     </time>    
-                                </div>
+                                </div><!-- date -->
                                 <div class="entry-title">
                                     <?php the_title('<h2>', '<h2>') ?>
 

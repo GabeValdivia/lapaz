@@ -561,7 +561,8 @@ header.entry-header {
     margin-top: 20px;
 }
 
-header.entry-header .date {
+header.entry-header .date,
+.entry-information .date {
     background-color: #f19f30;
     float: left;
     width: 70px;
@@ -571,13 +572,15 @@ header.entry-header .date {
     margin-right: 20px;
 }
 
-header.entry-header .date time {
+header.entry-header .date time,
+.entry-information .date time {
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 
-header.entry-header .date time span {
+header.entry-header .date time span,
+.entry-information .date time span {
     font-size: 16px;
     display: block;
     text-transform: uppercase;
@@ -600,13 +603,22 @@ header.entry-header h2 {
         font-size: 24px;
 }
 
-header.entry-header p.author {
+.entry-information {
+    padding-top: 10px;
+}
+
+header.entry-header p.author,
+.entry-information p.author {
     text-transform: uppercase;
     color: #3d3d3d;
     margin-top: 16px;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+}
+
+.entry-information p.author  {
+    margin-top: 35px;
 }
 
 p.author i {
