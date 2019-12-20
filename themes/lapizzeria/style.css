@@ -331,7 +331,7 @@ nav.site-nav ul li.current_page_item a,
 
 .content-text p {
     font-size: 18px;
-    line-height: 50px;
+    line-height: 1.6;
 }
 
 /** About Us - Info Boxes **/
@@ -694,12 +694,81 @@ form.searchform #s {
     color: #f19f30;
 }
 
+/** Comments **/
+.comment-respond h3 {
+    font-weight: 700;
+    text-align: center;
+
+}
+
+@media (min-width: 768px) {
+    div.comments {
+        width: 60%;
+
+    }
+}
+
+@media (min-width: 992px) {
+    div.comments {
+        width: 80%;
+        
+    }
+}
+
+.comment-respond form label {
+    /* width: 200px; */
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+form#commentform.comment-form p.comment-form-cookies-consent label {
+    display: inline;
+}
+
+.comment-respond  form input:not(#wp-comment-cookies-consent),
+.comment-respond  form textarea {
+    padding: 10px;
+    width: calc(100% - 220px);
+}
 
 
+.comment-respond form input[type="submit"] {
+    margin: 0 auto;
+    display: inline-block;
+    border: none;
+    width: auto;
+    background-color: #a61206;
+    color: #fff;
+    font-size: 20px;
+    /* border-radius: 8px; */
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
 
+.comment-respond form input[type="submit"]:hover {
+    background-color: #7b0d04;
+}
 
+p.form-submit {
+    text-align: center;
+}
 
+.comment-notes {
+    text-align: center;
+}
 
+.comment-respond form label {
+    max-width: 100%;
+}
+
+p.logged-in-as a{
+    color: #a61206;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
 
 
 

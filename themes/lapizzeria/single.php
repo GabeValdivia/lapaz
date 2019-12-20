@@ -25,6 +25,10 @@
                     </p><!-- author -->
                 </div>
                 <?php the_content(); ?>
+
+                <div class="container comments">
+                <?php comment_form(); ?>
+                </div>
             </main>
         </div>
         
