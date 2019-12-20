@@ -18,7 +18,7 @@
 
         <div class="main-content container">
             <div class="container-grid">
-                <main class="content-text columns2-3">
+                <main class="columns2-3">
                     <?php while(have_posts()): the_post(); ?>
                         <article class="entry">
                             <a href="<?php the_permalink(); ?>">
