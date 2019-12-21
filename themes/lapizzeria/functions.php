@@ -1,5 +1,10 @@
 <?php
 
+// Link or Import the database.php file
+
+require get_template_directory() . '/inc/database.php';
+
+
 // Add Theme Support ( thumbnails, featured images)
 function lapizzeria_setup() {
     add_theme_support('post-thumbnails');
