@@ -25,7 +25,7 @@ get_header(); ?>
                             <input type="datetime-local" name="date" placeholder="Date" required>
                         </div>
                         <div class="field">
-                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="email" name="email" placeholder="Email">
                         </div>
                         <div class="field">
                             <input type="tel" name="phone" placeholder="Phone Number" required>
