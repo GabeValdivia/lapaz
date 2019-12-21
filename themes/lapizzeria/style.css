@@ -731,6 +731,7 @@ form#commentform.comment-form p.comment-form-cookies-consent label {
 .comment-respond  form textarea {
     padding: 10px;
     width: calc(100% - 220px);
+    font-size: 18px;
 }
 
 

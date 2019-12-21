@@ -29,6 +29,23 @@
                 <div class="container comments">
                 <?php comment_form(); ?>
                 </div>
+
+                <div class="container comment-list">
+                    <ol class="comment-list">
+                        <?php
+                            $comments = get_comments(array(
+                                'post_id' => $post->ID,
+                                'status' => 'approve'
+                            ));
+                            wp_list_comments(array(
+                                'per_page' => 10,
+                                'reverse_top_level' => false
+
+                            ), $comments);
+
+                        ?>
+                    </ol>
+                </div>
             </main>
         </div>
         
