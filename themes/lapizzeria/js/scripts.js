@@ -11,4 +11,29 @@ jQuery(document).ready(function($){
             $('nav.site-nav').hide();
         }
     });
+
+    boxAdjustment();
+
+    // Fluidbox Plugin
+    jQuery('.gallery a').each(function(){
+        jQuery(this).attr({'data-fluidbox' : ''});
+    });
+
+    if(jQuery('[data-fluidbox]').length > 0) {
+        jQuery('[data-fluidbox]').fluidbox();
+    }
+
 });
+
+//Adapt the height of the images to the div elements
+
+function boxAdjustment() {
+    var images = jQuery('.box-image');
+    if(images.length > 0){
+        var imageHeight = images[0].height;
+        var boxes = jQuery('.content-box');
+        jQuery(boxes).each(function(i, element){
+            jQuery(element).css({'height': imageHeight + 'px'});
+        });
+    }
+}
