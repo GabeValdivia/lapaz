@@ -601,6 +601,8 @@ header.entry-header h2 {
 @media (min-width: 768px) {
     header.entry-header h2 {
         font-size: 24px;
+    
+    }
 }
 
 .entry-information {
@@ -813,7 +815,7 @@ li.comment ul.children li{
 
 
 /** Gallery [ Return to this item! ]**/
-#gallery-1 .gallery-item {
+/* #gallery-1 .gallery-item {
     width: 50%!important;
     padding: 0 10px !important;
 }
@@ -823,7 +825,37 @@ li.comment ul.children li{
     #gallery-1 .gallery-item {
         width: 25% !important;
     }
+} */
+
+/** Gallery **/
+
+ul.gallery-images {
+    padding-left: 0;
 }
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.gallery-images li {
+    list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .gallery-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        
+    }
+}
+
+.gallery-images li a img {
+    max-width: 100%;
+}
+
 
 /** Contact Us - Reservations**/
 .reservation {

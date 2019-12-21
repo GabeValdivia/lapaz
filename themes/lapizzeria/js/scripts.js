@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
     boxAdjustment();
 
     // Fluidbox Plugin
-    jQuery('.gallery a').each(function(){
+    jQuery('.gallery-images a').each(function(){
         jQuery(this).attr({'data-fluidbox' : ''});
     });
 

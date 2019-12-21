@@ -14,10 +14,7 @@
         </div>
 
         <div class="main-content container">
-            <main class="text-center content-text clear">
-                <?php the_content(); ?>
-                <?php while(have_posts() ): the_post(); ?>
-            <h1 class="text-center text-primary"><?php the_title(); ?></h1>
+            <main class="content-box clear">
 
             <?php 
                 $gallery = get_post_gallery( get_the_ID(), false );
@@ -28,7 +25,7 @@
                 <?php
                 $i = 0;
                     foreach($gallery_images_ids as $id): 
-                        $size = ($i ===  3 || $i === 6) ? 'portrait' : 'square';
+                        $size = ($i ===  3 || $i === 6) ? 'thumbnail' : 'thumbnail';
                         $imageThumb = wp_get_attachment_image_src($id, $size);
                         $image = wp_get_attachment_image_src($id, 'large');                        
                 ?>
@@ -43,11 +40,5 @@
 
             </main>
         </div>
-        
-
-        
-        
-
-        <?php endwhile; ?>
 
 <?php get_footer(); ?>
