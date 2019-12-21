@@ -1,10 +1,11 @@
 <?php
 
-// Link or Import the database.php file
-
+// Link or Import the database.php file with SQL
 require get_template_directory() . '/inc/database.php';
-
+//Handles submission to Database
 require get_template_directory() . '/inc/reservations.php';
+//Creates Options Page for the theme
+require get_template_directory() . '/inc/options.php';
 
 
 // Add Theme Support ( thumbnails, featured images)
