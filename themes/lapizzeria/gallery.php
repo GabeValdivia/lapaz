@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: Galleryx
+* Template Name: Gallery
 */
  get_header(); ?>
 
@@ -14,7 +14,7 @@
         </div>
 
         <div class="main-content container">
-            <main class="content-box clear">
+            <main>
 
             <?php 
                 $gallery = get_post_gallery( get_the_ID(), false );
