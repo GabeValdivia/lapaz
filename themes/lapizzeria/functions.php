@@ -4,6 +4,8 @@
 
 require get_template_directory() . '/inc/database.php';
 
+require get_template_directory() . '/inc/reservations.php';
+
 
 // Add Theme Support ( thumbnails, featured images)
 function lapizzeria_setup() {

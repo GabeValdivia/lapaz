@@ -33,7 +33,7 @@ get_header(); ?>
                         <div class="field">
                             <textarea name="message" placeholder="Message" required></textarea>
                         </div>
-                        <input type="submit" name="submit" class="button" value="Send">
+                        <input type="submit" name="reservation" class="button" value="Send">
 
                         <input type="hidden" name="hidden" value="1">
 
