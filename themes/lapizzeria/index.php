@@ -11,7 +11,7 @@
         <div class="hero" style="background-image:url(<?php echo $image[0]; ?>);">
             <div class="hero-content">
                 <hero-text>
-                <h2><?php echo get_the_title($blog_page); ?></h2>
+                <h2><?php echo get_the_title($blog_page); ?></h2>                
                 </hero-text>
             </div>
         </div>

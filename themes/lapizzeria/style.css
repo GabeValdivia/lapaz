@@ -812,6 +812,19 @@ li.comment ul.children li{
 }
 
 
+/** Gallery [ Return to this item! ]**/
+#gallery-1 .gallery-item {
+    width: 50%!important;
+    padding: 0 10px !important;
+}
+
+@media only screen and (min-width: 768px) {
+  
+    #gallery-1 .gallery-item {
+        width: 25% !important;
+    }
+}
+
 
 
 
