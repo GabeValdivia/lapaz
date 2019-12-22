@@ -1019,8 +1019,14 @@ section.ingredients {
     background-position: center center;
     background-size: cover;
     margin-top: 50px;
-    padding: 80px 0;
+    padding: 80px 30px;
     color: #fff;
+}
+
+@media (max-width: 767px) {
+    section.ingredients {
+        padding: 80px 0;
+    }
 }
 
 section.ingredients h3 {
@@ -1094,7 +1100,7 @@ section.location-reservation {
     background-size: cover;
     background-position: center center;
     margin-top: 50px;
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 .home .reservation-info {
     margin:  0;
@@ -1106,7 +1112,7 @@ section.location-reservation {
     font-weight: 900;
     font-size: 34px;
     font-family: 'Raleway', sans-serif;
-    margin: 0 0 20px 0;
+    margin: 30px 0;
 }
 
 .home .reservation-info input,
@@ -1132,4 +1138,22 @@ section.location-reservation {
 
 .home .reservation-info form.reservation-form input::-ms-input-placeholder{
     color: #fff!important;
+}
+
+/** Leaflet Map **/
+
+@media (max-width: 767px) {
+    .home .reservation-form  {
+        max-width: 80%;
+        padding: 30px 0;
+        margin: 0 auto;
+    }
+
+    .columns2-4 .map {
+            display: none;
+    }
+}
+
+.home footer {
+    margin-top: 0;
 }

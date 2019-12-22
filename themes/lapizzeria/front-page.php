@@ -71,7 +71,7 @@
             <div class="container-grid">
                 <div class="columns2-4">
                     <div class="map">
-                        <p>Sample text here</p>
+                        <?php echo do_shortcode('[leaflet-map]'); ?>
                     </div>
                 </div>
                 <div class="columns2-4">
