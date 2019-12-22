@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+    <!--Hero Section -->
     <?php while(have_posts()): the_post(); ?>
         <div class="hero" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
             <div class="hero-content">
@@ -12,7 +12,7 @@
             </div>
         </div>
         <?php endwhile; ?>
-
+        <!-- Our Specialties Section Grid -->
         <div class="main-content container">
             <main class="container-grid content-text clear">
                 <h2 class="primary-text text-center">Our Specialties</h2>
@@ -21,12 +21,9 @@
                     'post_type' => 'specialties',
                     'category_name' => 'pizzas',
                     'orderby' => 'rand'
-                ); 
-                
+                );                 
                 $specialties = new WP_Query($args);
-
-                while($specialties->have_posts()): $specialties->the_post(); ?>
-                
+                while($specialties->have_posts()): $specialties->the_post(); ?>                
                 <div class="specialty columns1-3">
                     <div class="specialty-content">
                         <?php the_post_thumbnail('specialty-portrait'); ?>
@@ -41,7 +38,7 @@
                 <?php endwhile; wp_reset_postdata(); ?>
             </main>
         </div>
-
+        <!--Fresh Ingredients Section with Pizza image -->
         <section class="ingredients">
             <div class="container">
                 <div class="container-grid">
@@ -52,7 +49,6 @@
                             <?php $url = get_page_by_title('About Us'); ?>
                 <a class="button primary" href="<?php echo get_permalink($url->ID); ?>">Read More</a>
                         </div>
-
                         <div class="columns2-4 image">
                             <img src="<?php the_field('image'); ?>" alt="Fresh Ingredients">    
                         
@@ -62,7 +58,14 @@
                 </div>
             </div>
         </section>
-        
+        <!--Gallery Section -->
+        <section class="container gallery-home clear">
+            <h2 class="primary-text text-center">Gallery</h2>
+            <?php 
+            $url = get_page_by_title('Gallery');
+            echo get_post_gallery($url->ID);
+            ?>
+        </section>
         
 
         
