@@ -99,6 +99,15 @@ body {
     background-color: #7b0d04;
 }
 
+.secondary {
+    background-color: #f19f30;
+    transition: background-color .5s ease;
+}
+
+.secondary:hover {
+    background-color: #da8b20;
+}
+
 /** Header **/
 header.site-header {
     border-bottom: 1px solid #c1c1c1;
@@ -911,9 +920,38 @@ form.reservation-form input[type="submit"]:hover {
 }
 
 
+/** Home Page **/
+.home div.hero {
+    height: 750px;
+}
 
+.home .hero-text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+}
 
+@media (min-width: 768px) {
+    .home .main-content {
+        margin-top: 0px;
+    }
 
+    .home .hero-text {
+        width: 55%;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .home .hero-text {
+        width: 45%;
+    }
+}
+
+.home .hero-text p {
+    line-height: 40px;
+    font-size: 18px;
+}
 
 
 
