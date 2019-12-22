@@ -928,12 +928,12 @@ form.reservation-form input[type="submit"]:hover {
 .home .hero-text {
     width: 80%;
     margin: 0 auto;
-    font-size: 16px;
 }
 
 @media (min-width: 768px) {
     .home .main-content {
         margin-top: 0px;
+        padding: 0;
     }
 
     .home .hero-text {
