@@ -53,7 +53,7 @@
                 <a class="button primary" href="<?php echo get_permalink($url->ID); ?>">Read More</a>
                         </div>
 
-                        <div class="columns2-4">
+                        <div class="columns2-4 image">
                             <img src="<?php the_field('image'); ?>" alt="Fresh Ingredients">    
                         
                         </div>
