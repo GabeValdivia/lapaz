@@ -1,5 +1,14 @@
 <?php
 
+function lapizzeria_settings() {
+
+	//Information Group
+	register_setting( 'lapizzeria_options_info', 'lapizzeria_location');
+	register_setting( 'lapizzeria_options_info', 'lapizzeria_phonenumber');
+
+}
+add_action( 'init', 'lapizzeria_settings');
+
 // Link or Import the database.php file with SQL
 require get_template_directory() . '/inc/database.php';
 //Handles submission to Database
