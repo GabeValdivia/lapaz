@@ -67,11 +67,11 @@
             ?>
         </section>
         <!--Location & Reservation -->
-        <section class="location-reservation clear">
+        <section class="location-reservation clear container">
             <div class="container-grid">
                 <div class="columns2-4">
                     <div class="map">
-                        
+                        <p>Sample text here</p>
                     </div>
                 </div>
                 <div class="columns2-4">
