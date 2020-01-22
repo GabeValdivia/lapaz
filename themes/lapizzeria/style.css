@@ -133,6 +133,7 @@ div.logo {
 
 img.logo-image {
     width: 250px;
+    padding-top: 15px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -29,6 +29,7 @@ function lapizzeria_setup() {
 }
 add_action('after_setup_theme', 'lapizzeria_setup');
 
+// Register styles & Scripts
 function lapizzera_styles() {
     // Adding stylesheests
     wp_register_style('googlefont', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900&display=swap', array(), '1.0.0');

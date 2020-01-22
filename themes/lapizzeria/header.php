@@ -13,7 +13,7 @@
     <div class="container">
         <div class="logo">
             <a href="<?php echo esc_url( home_url('/') ); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" class="logo-image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/paz-logo.svg" class="logo-image" />
             </a>
         </div><!-- Logo -->
         <div class="header-information">
